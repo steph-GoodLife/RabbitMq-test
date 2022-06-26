@@ -13,11 +13,12 @@ Le massage est envoyé au broker RabbitMQ chargé de mettre les messages en queu
 ## Ressources utiles
 
 - La doc Symfony
+https://symfony.com/doc/current/the-fast-track/fr/32-rabbitmq.html
 
 - Comprendre le traitement asynchrones :
 https://www.kaliop.com/fr/traitements-asynchrones-avec-symfony/
 
-Introduction to RabbitMQ and Symfony :
+- Introduction to RabbitMQ and Symfony :
 https://dev.to/fabiothiroki/introduction-to-rabbitmq-and-symfony-2an4
 
 - Video/tuto YouTube :
