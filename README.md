@@ -1,5 +1,28 @@
 # RabbitMQ-test
 Test avec RabbitMq
+Symfony 5
+PHP 8.0.3
+
+Une class contient l'enveloppe du message: Message -> AdditionNotification.php
+Elle est récupérée par un worker : MessageHandler -> AdditionNotification.php
+Le massage est envoyé au broker RabbitMQ chargé de mettre les messages en queue et les consommer, pour les renvoyer ensuite à la vue.
+
+- Necessite l'installation du module PHP "amqp"
+- du "symfony composer req amqp-messenger"
+
+## Ressources utiles
+
+- La doc Symfony
+
+- Comprendre le traitement asynchrones :
+https://www.kaliop.com/fr/traitements-asynchrones-avec-symfony/
+
+Introduction to RabbitMQ and Symfony :
+https://dev.to/fabiothiroki/introduction-to-rabbitmq-and-symfony-2an4
+
+- Video/tuto YouTube :
+Yoan Dev : https://yoandev.co/de-lasynchrone-avec-symfony-5-et-rabbitmq/
+
 
 # Lancement de RabbitMQ
 
