@@ -13,7 +13,6 @@ docker-compose up -d
 # La base de données MYSQL
 
 L'image de MYSQL a été importée dans le docker-compose.yml
-Elle sera lancé avec la commande "docker-compose" ci-dessus.
 
 ## Se connecter à la base de données
 
@@ -23,7 +22,11 @@ Créez la base de données avec la commande :
 php bin/console make:docker:database
 ```
 
-Lancez la commande : "docker-compose up -d"
+Lancez la commande :
+
+```bash
+docker-compose up -d
+```
 
 Créez les migrations avec la commande :
 
