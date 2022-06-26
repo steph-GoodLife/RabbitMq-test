@@ -40,7 +40,9 @@ Executez les migrations avec la commande :
 symfony console doctrine:migrations:migrate
 ```
 
-## Se connecter à la base de données avec la commande :
+## Se connecter à la base de données :
+
+Lancez la commande :
 
 ```bash
 docker-compose exec database mysql -u root --password=password
