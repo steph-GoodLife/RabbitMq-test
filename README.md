@@ -3,9 +3,9 @@ Test avec RabbitMq
 Symfony 5
 PHP 8.0.3
 
-Une class contient l'enveloppe du message: Message -> AdditionNotification.php
-Elle est récupérée par un worker : MessageHandler -> AdditionNotification.php
-Le massage est envoyé au broker RabbitMQ chargé de mettre les messages en queue et les consommer, pour les renvoyer ensuite à la vue.
+Une class contient l'enveloppe du message: src/Message -> AdditionNotification.php
+Elle est récupérée par un worker qui se chargera de mettre les messages en file d'attente : src/MessageHandler -> AdditionNotification.php
+Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les renvoyer ensuite à la vue.
 
 - Necessite l'installation du module PHP "amqp"
 - du "symfony composer req amqp-messenger"
