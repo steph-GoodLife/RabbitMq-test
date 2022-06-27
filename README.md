@@ -3,6 +3,8 @@ Test avec RabbitMq
 Symfony 5
 PHP 8.0.3
 
+Formulaire sur la route : /addition
+
 Une class contient l'enveloppe du message: src/Message -> AdditionNotification.php
 Elle est récupérée par un worker qui se chargera de mettre les messages en file d'attente : src/MessageHandler -> AdditionNotification.php
 Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les renvoyer ensuite à la vue.
@@ -45,6 +47,8 @@ Créez la base de données avec la commande :
 ```bash
 php bin/console make:docker:database
 ```
+- Choisir 0 pour MYSQL
+- Nom du container : database
 
 Lancez la commande :
 
