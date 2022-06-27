@@ -38,7 +38,9 @@ class AdditionController extends AbstractController
 
         return $this->render('addition/index.html.twig', [
             'form' => $form->createView(),
-            'result' => $result->findAll(),
+            //appel de la requete
+            //remplacer par findAll() en cas de problème pour avoir un retour le temps de debugger
+            'result' => $result->additionDeuxValeurs(),
         ]);
     }
 

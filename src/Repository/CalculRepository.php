@@ -46,6 +46,20 @@ class CalculRepository extends ServiceEntityRepository
      * Idée de départ :
      * Select (convert(int, nombre1)+convert(int, nombre2)) as summed from calcul
      */
+    public function additionDeuxValeurs()
+    {
+        $entityManager = $this->getEntityManager();
+
+        $query = $entityManager->createQuery(
+            'SELECT id, nombre1, nombre2, (SUM(nombre1)+ SUM(nombre2))
+            AS total
+            FROM calcul
+            GROUPE BY id'
+        );
+        
+        // returns an array of Product objects
+        return $query->getResult();
+    }
 
 
 //    /**
