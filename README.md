@@ -3,7 +3,7 @@ Test avec RabbitMq
 Symfony 5
 PHP 8.0.3
 
-Formulaire sur la route : /addition
+### Formulaire sur la route : /addition
 
 Une class contient l'enveloppe du message: src/Message -> AdditionNotification.php
 Elle est récupérée par un worker qui se chargera de mettre les messages en file d'attente : src/MessageHandler -> AdditionNotification.php
