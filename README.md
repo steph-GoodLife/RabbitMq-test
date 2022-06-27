@@ -13,6 +13,8 @@ PHP 8.0.3
 - une DB MySQL avec persist des valeurs du formulaire
 - une vue twig addition->index.html.twig
 - un formulaire qui comporte deux entrées avec un submit
+- MESSENGER_TRANSPORT_DSN dans le bundle messenger.yaml
+- Modification du .env
 
 ### docker-compose.yml :
 - image: 'mysql:latest'
@@ -44,7 +46,7 @@ Yoan Dev : https://yoandev.co/de-lasynchrone-avec-symfony-5-et-rabbitmq/
 # Lancement de RabbitMQ
 
 L'image de RabbitMQ a été imoprtée dans le docker-compose.yml
-Il est exposé sur le port 5672 ou sera ouvert via le server Symfony, aprés avoir lancé la commande :
+Il est exposé sur le port 5672 ou sera ouvert via le server Symfony [login:guest - pass:guest], aprés avoir lancé la commande :
 
 ```bash
 docker-compose up -d
