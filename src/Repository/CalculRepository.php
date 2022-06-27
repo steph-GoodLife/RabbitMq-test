@@ -39,6 +39,15 @@ class CalculRepository extends ServiceEntityRepository
         }
     }
 
+    //Essaie de requête pour additionner les deux valeurs de chaque colonne,
+    //et passer cette requête dans le contrôleur 
+
+    /**
+     * Idée de départ :
+     * Select (convert(int, nombre1)+convert(int, nombre2)) as summed from calcul
+     */
+
+
 //    /**
 //     * @return Calcul[] Returns an array of Calcul objects
 //     */
