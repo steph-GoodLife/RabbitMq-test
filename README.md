@@ -5,6 +5,20 @@ PHP 8.0.3
 
 ### Formulaire sur la route : /addition
 
+### Les fichiers installés :
+- une Entity -> Calcul.php
+- un Repository -> CalculRepository.php
+- un Message -> AdditionNotification.php
+- un Handler -> AdditionNotification.php
+- une DB MySQL avec persist des valeurs du formulaire
+- une vue twig addition->index.html.twig
+- un formulaire qui comporte deux entrées avec un submit
+
+### docker-compose.yml :
+- image: 'mysql:latest'
+- image: rabbitmq:3.9-management
+
+
 Une class contient l'enveloppe du message: src/Message -> AdditionNotification.php
 Elle est récupérée par un worker qui se chargera de mettre les messages en file d'attente : src/MessageHandler -> AdditionNotification.php
 Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les renvoyer ensuite à la vue.
