@@ -18,7 +18,7 @@ PHP 8.0.3
 - image: 'mysql:latest'
 - image: rabbitmq:3.9-management
 
-
+### description
 Une class contient l'enveloppe du message: src/Message -> AdditionNotification.php
 Elle est récupérée par un worker qui se chargera de mettre les messages en file d'attente : src/MessageHandler -> AdditionNotification.php
 Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les renvoyer ensuite à la vue.
