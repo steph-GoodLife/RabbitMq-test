@@ -97,7 +97,7 @@ docker-compose exec database mysql -u root --password=password
 Lancez la commande :
 
 ```bash
-use addition
+use main
 ```
 
 Voir les tables :
