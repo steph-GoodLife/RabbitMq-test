@@ -40,7 +40,7 @@ class AdditionController extends AbstractController
             'form' => $form->createView(),
             //appel de la requete
             //remplacer par findAll() en cas de problème pour avoir un retour le temps de debugger
-            'result' => $result->additionDeuxValeurs(),
+            'results' => $result->additionDeuxValeurs(),
         ]);
     }
 

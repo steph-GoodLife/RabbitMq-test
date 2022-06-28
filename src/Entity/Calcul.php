@@ -36,11 +36,6 @@ class Calcul
         return $this;
     }
 
-    public function __toString()
-    {
-        return $this->Nombre1;
-    }
-
     public function getNombre2(): ?string
     {
         return $this->Nombre2;
