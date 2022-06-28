@@ -58,6 +58,8 @@ L'image de MYSQL a été importée dans le docker-compose.yml
 
 ## Se connecter à la base de données
 
+Dans le docker-compose.yml renommer la base de donnée en "addition" services->database->MYSQL_DATABASE:addition
+
 Créez la base de données avec la commande :
 
 ```bash
