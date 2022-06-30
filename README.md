@@ -30,7 +30,7 @@ Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les ren
 
 ## Ressources utiles
 
--blog martinfowler.com
+- blog martinfowler.com
 https://martinfowler.com/eaaCatalog/dataTransferObject.html
 
 - Exemple implémenation class DTO (Data Transfert Object)
