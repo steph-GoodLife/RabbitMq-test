@@ -30,6 +30,9 @@ Le message est envoyé au broker RabbitMQ chargé de les consommer, pour les ren
 
 ## Ressources utiles
 
+- Exemple implémenation class DTO (Data Transfert Object)
+https://kvashnin.github.io/blog/using-request-dto-in-symfony/
+
 - La doc Symfony
 https://symfony.com/doc/current/the-fast-track/fr/32-rabbitmq.html
 
