@@ -31,7 +31,7 @@ class AdditionController extends AbstractController
 
         //return new JsonResponse($task);
 
-        $form = $this->createForm(CalculType::class, $task);
+        $form = $this->createForm(CalculType::class, $$responseContent);
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) { 
